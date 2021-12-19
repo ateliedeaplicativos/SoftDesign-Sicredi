@@ -1,0 +1,57 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sicredi</title>
+  <link rel="stylesheet" type="text/css" href="/src/app/auth/components/login/login.component.scss">
+</head>
+
+<body>
+  <div class="login-root">
+    <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
+      <div class="loginbackground box-background--white padding-top--64">       
+      </div>
+      <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+        <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+            <img [src]="logoSicredi" width=18%>
+        </div>
+        <div class="formbg-outer">
+          <div class="formbg">
+            <div class="formbg-inner padding-horizontal--48">
+              <form [formGroup]="formLogin" (ngSubmit)="login()" id="stripe-login">
+                <div class="field padding-bottom--24">
+                  <label for="userName">Nome</label>
+                  <input type="text" name="userName" formControlName="userName" [ngClass]="{ 'error': isSubmitted && formLogin.controls.userName.errors }">
+                                      <div class="input-error">
+                        <span *ngIf="isSubmitted && formLogin.controls.userName.errors">
+                            Campo obrigatório
+                        </span>
+                    </div>
+                </div>
+                <div class="field padding-bottom--24">
+                  <div class="grid--50-50">
+                    <label for="password">Senha</label>
+                  </div>
+                  <input type="password" name="password" formControlName="password"
+                    [ngClass]="{ 'error': isSubmitted && formLogin.controls.password.errors }">
+                    <div class="input-error">
+                        <span *ngIf="isSubmitted && formLogin.controls.password.errors">
+                            Campo obrigatório
+                        </span>
+                    </div>
+                </div>
+                <div class="field padding-bottom--24">
+                <span *ngIf="!!loginErrorMessage" class="login-component__box__login-Form__text--error">
+                        {{[loginErrorMessage]}}
+                    </span>
+                  <input id="botao" type="submit" name="action" value="Entrar">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

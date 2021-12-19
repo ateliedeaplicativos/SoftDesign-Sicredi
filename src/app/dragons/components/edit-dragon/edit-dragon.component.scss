@@ -1,0 +1,55 @@
+.formbg {
+    margin: 0px auto;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 90%;
+    max-height: auto;
+    background: white;
+    border-radius: 4px;
+    box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+}
+#alignBtn{
+    float: right;
+    margin-right: 8px;
+}
+
+@media only screen and (max-width: 380px) {
+    #botao  {
+        background-color: rgb(63, 161, 16);
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                    rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                    rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, 
+                    rgb(63, 161, 16) 0px 0px 0px 1px, 
+                    rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                    rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                    rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+        color: #fff;
+        font-weight: 200;
+        cursor: pointer;
+        margin-left: 40px;
+    }
+
+    .formbg {
+        margin: 30px auto;
+        margin-top: 50px;
+        width: 100%;
+        padding-bottom: 30px;
+        max-width: 90%;
+        max-height: auto;
+        background: white;
+        border-radius: 4px;
+        box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+    }
+    #table{
+        width: 80%;
+        margin-top: 30px;
+    }  
+
+    #alignBtn{
+        float: right;
+        margin-right: 8px;
+        padding-bottom: 10px;
+    }
+    
+}

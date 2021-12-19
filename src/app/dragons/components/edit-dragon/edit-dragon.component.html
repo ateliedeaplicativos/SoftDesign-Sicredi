@@ -1,0 +1,40 @@
+<button (click)="logout()" class="button danger cursor-pointer" id="alignBtn">Sair</button>
+<div class="card">
+    <div class="formbg">
+        <form [formGroup]="editDragonForm" (ngSubmit)="submitEditDragon()">
+            <label for="name">Nome Dragon-Credi:</label>
+            <div class="form-imput">
+                <input type="text" name="name" formControlName="name"
+                [ngClass]="{ 'error': isSubmitted && editDragonForm.controls.name.errors }" />
+                <div class="input-error">
+                    <span *ngIf="isSubmitted && editDragonForm.controls.name.errors">
+                        Campo obrigatório
+                    </span>
+                </div>
+            </div>
+
+            <label for="type">Tipo de Dragon-Credi:</label>
+            <div class="form-imput">
+                <input type="text" name="type" formControlName="type"
+                [ngClass]="{ 'error': isSubmitted && editDragonForm.controls.type.errors }" />
+                <div class="input-error">
+                    <span *ngIf="isSubmitted && editDragonForm.controls.type.errors">
+                        Campo obrigatório
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="login-component__box__login-Form__text">
+                <span *ngIf="!!editDragonErrorMessage" class="login-component__box__login-Form__text--error">
+                    {{[editDragonErrorMessage]}}
+                </span>
+            </div>
+
+            <div class="centered">
+                <button type="submit" class="button success">Atualizar</button>&nbsp;
+                <button class="button cursor-pointer" [routerLink]="['/dragons']">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>

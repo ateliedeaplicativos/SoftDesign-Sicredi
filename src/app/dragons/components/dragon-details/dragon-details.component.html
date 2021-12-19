@@ -1,0 +1,14 @@
+<button (click)="logout()" class="button danger cursor-pointer" id="alignBtn">Sair</button>
+<div class="card">
+    <div class=" card__content formbg">
+        <div class="card__content__generic">
+            <button class="button cursor-pointer" [routerLink]="['/dragons']">Voltar</button>
+            <h1>Detalhes do Dragon-Credi</h1>
+            <ul>
+                <li><b>Nome:</b> {{dragon.name}}</li>
+                <li><b>Tipo:</b> {{dragon.type}}</li>
+                <li><b>Data de criação:</b> {{dragon.createdAt | date : 'dd/MM/yyyy HH:mm:ss'}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

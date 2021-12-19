@@ -1,0 +1,110 @@
+#alignBtn{
+    float: right;
+    margin-right: 8px;
+}
+
+#table{
+    margin-top: 20px;
+}
+
+#botao  {
+    background-color: rgb(63, 161, 16);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, 
+                rgb(63, 161, 16) 0px 0px 0px 1px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 40px;
+}
+.formbg {
+    margin: 0px auto;
+    width: 100%;
+    padding-bottom: 15px;
+    max-width: 90%;
+    max-height: auto;
+    background: white;
+    border-radius: 4px;
+    box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+}
+
+
+@media only screen and (max-width: 380px) {
+    #botao  {
+        background-color: rgb(63, 161, 16);
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                    rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                    rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, 
+                    rgb(63, 161, 16) 0px 0px 0px 1px, 
+                    rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                    rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                    rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+        color: #fff;
+        font-weight: 200;
+        cursor: pointer;
+        margin-left: 40px;
+    }
+
+    .formbg {
+        margin: 30px auto;
+        margin-top: 50px;
+        width: 100%;
+        padding-bottom: 30px;
+        max-width: 90%;
+        max-height: auto;
+        background: white;
+        border-radius: 4px;
+        box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+    }
+    #table{
+        width: 80%;
+        margin-top: 30px;
+    }  
+
+    #alignBtn{
+        float: right;
+        margin-right: 8px;
+        padding-bottom: 10px;
+    }
+
+    table thead {
+    text-align: center;
+    color: white;
+    padding-top:0.2em;
+    padding-bottom:0.2em;
+    }
+
+    th{display: flex; flex-direction: column}
+    tr{display: flex; flex-direction: column}
+
+
+
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+
+    table td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    table td:last-child {
+      border-bottom: 0;
+    }
+    
+}
