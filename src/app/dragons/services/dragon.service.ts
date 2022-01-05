@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
 import { ApiService } from 'src/app/shared/services/api.service';
-import { Dragon } from '../models/dragon';
 
 @Injectable({
   providedIn: 'root'

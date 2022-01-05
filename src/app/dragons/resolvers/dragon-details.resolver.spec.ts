@@ -4,8 +4,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 
 import { DragonDetailsResolver } from './dragon-details.resolver';
 import { DragonService } from '../services/dragon.service';
-import { ActivatedRouteSnapshot, Router, RouterStateSnapshot } from '@angular/router';
-import { noop, of, throwError } from 'rxjs';
+import { Router } from '@angular/router';
 
 describe('DragonDetailsResolver', () => {
   let resolver: DragonDetailsResolver;
